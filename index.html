@@ -1,1 +1,38 @@
-<iframe title="EDA on We Reflect Data - final" width="auto" height="auto" src="https://app.powerbi.com/view?r=eyJrIjoiYTE0ZTEzZmUtMjRiOC00MjUxLWFkOWUtMWFlODgwNTkzYWI2IiwidCI6ImNhMGNjMDc0LTk5ZDItNGNjMS04MzY0LTU3ODllMGFkYmQ4MiJ9&pageName=ReportSectionee97e6e77bfe4e7d3ff9" frameborder="0" allowFullScreen="true"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Iconweschool.png">
+    <title>We Reflect Report</title>
+</head>
+
+<body onload="fullscreen()">
+    <style type="text/css">
+        .fullscreen {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <iframe class="fullscreen" id="Report" title="We Reflect Report" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiYTE0ZTEzZmUtMjRiOC00MjUxLWFkOWUtMWFlODgwNTkzYWI2IiwidCI6ImNhMGNjMDc0LTk5ZDItNGNjMS04MzY0LTU3ODllMGFkYmQ4MiJ9&pageName=ReportSectionee97e6e77bfe4e7d3ff9"
+        frameborder="0" allowFullScreen="true"></iframe>
+    <script>
+         //Report = Report containerid
+        // var report = powerbi.get(element);
+        // report.fullscreen();
+        let height = screen.height;
+        function fullscreen(){
+            // var element = document.getElementById('Report').style.cssText="width:100%;height:height";
+            document.querySelector('#Report').style.height=height+'px';
+            // document.querySelector('#Report').style.width = 100%
+        };
+
+    </script>
+
+</body>
+
+</html>
